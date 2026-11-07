@@ -31,3 +31,8 @@ security audit or guarantee of recovery after losing a passphrase or identity.
 This repository hosts documentation and downloads. Application source is
 maintained separately. KryptoCore is available under MIT. Third-party
 components retain their own terms. The ZIP includes license texts and notices.
+
+For an independent offline interface to existing KCC files, see the
+[Rescue preview](https://github.com/kryptocorelabs/rescue). It uses the same
+authenticated reader and writes to a fresh destination. It does not replace
+Container's sender-signature or optional scanner tools.
