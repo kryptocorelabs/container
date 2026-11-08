@@ -24,7 +24,7 @@ The Windows runtime is included. Optional OpenSSH and ClamAV tools are installed
 
 ## Preview status
 
-Version 0.1.0-alpha.1. Use synthetic data and retain original files and
+Version 0.1.0-alpha.2-preview.1. Use synthetic data and retain original files and
 independent backups. The executable is unsigned. There is no independent
 security audit or guarantee of recovery after losing a passphrase or identity.
 
@@ -36,3 +36,12 @@ For an independent offline interface to existing KCC files, see the
 [Rescue preview](https://github.com/kryptocorelabs/rescue). It uses the same
 authenticated reader and writes to a fresh destination. It does not replace
 Container's sender-signature or optional scanner tools.
+
+## Shared signatures and scan limits
+
+The current preview adds **Signaturen** for protected `.kcsk` keys,
+public `KCP1:` codes and detached `.kcsig` files. Verify/extract with
+Container or Rescue using an independently confirmed public code.
+See [signature protocol](SIGNATURES.md), [malware checks](MALWARE-PROTECTION.md)
+and [release notes](RELEASE_NOTES.md). ClamAV is an external optional tool;
+a failed requested scan blocks output. Existing OpenSSH options remain available.

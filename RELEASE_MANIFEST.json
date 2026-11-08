@@ -1,19 +1,30 @@
 {
+  "schema_version": 1,
   "application": "KryptoCore Container",
-  "version": "0.1.0-alpha.1",
+  "version": "0.1.0-alpha.2-preview.1",
   "platform": "windows-x64",
   "source_repository": "https://github.com/kryptocorelabs/apps-source",
   "source_visibility": "private",
-  "source_commit": "9d3f4c3c32279744e529e18e7ebdb8f67fde5552",
+  "source_commit": "305919496eacd95ce76d851148841c58945b77bc",
+  "build_context": "Local Windows development workspace; corresponding application source copied to the recorded private commit. Independent clean binary reproducibility is not established.",
   "rust": "1.99.1",
   "dotnet_runtime": "10.0.9",
   "tor": null,
   "authenticode_signed": false,
+  "independent_audit": false,
+  "binary_reproducible": false,
   "executable": "KryptoCore-Container.exe",
-  "executable_sha256": "bb9e33dd49184069d6ab6e5ed86b4818d6da9a70f6b049aa469a9595ee0b1ce2",
-  "package_check": "passed",
-  "local_rust_tests": {
-    "passed": 26,
-    "ignored_large_file_test": 1
+  "executable_sha256": "e6e855fc0cc375fe803cb7f4751a96e71904633a294239de115d52a08f3946a4",
+  "archive": "KryptoCore-Container-0.1.0-alpha.2-preview.1-windows-x64.zip",
+  "archive_sha256": "a9c08b7cf22b09c64deb62de60bb307e5f350a108ab278455c853d8d911e5527",
+  "release_url": "https://github.com/kryptocorelabs/container/releases/tag/v0.1.0-alpha.2-preview.1",
+  "validation": {
+    "embedded_worker_check": "passed",
+    "rust_workspace": "passed on local Windows",
+    "gui": "Windows cross-app protected-key/signature flow and controlled scanner detection/error/no-detection gates passed; this does not measure real antivirus detection.",
+    "signature_protocol": "KCCS v1; KCP1 public code; encrypted KCSK v1 key file",
+    "real_clamav_engine_tested": false,
+    "public_tor_verified": null,
+    "rust_notice_entries": 72
   }
 }

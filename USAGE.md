@@ -4,6 +4,10 @@ Container packages files and folders into a portable, read-only encrypted
 archive. It runs offline. The recipient needs the app and the passphrase.
 This is an alpha for testing with copies; keep the originals.
 
+The Windows app source is in the private application workspace. Build it with
+`./apps/container/build-windows.ps1` from the workspace root. See the
+[private implementation build instructions](https://github.com/kryptocorelabs/apps-source/blob/main/apps/desktop/README.md) for prerequisites.
+
 In Windows Explorer, right-click a `.kcc` file and choose **Open with**.
 Select the portable `KryptoCore-Container.exe` and choose **Always** to
 open future containers with a double-click. Enter the passphrase and press
@@ -92,3 +96,12 @@ The format supports up to 1 TiB of plaintext and 10,000 entries, with fixed
 memory per data chunk. This is a format limit, not a performance claim. Names
 are encrypted; file structure and sizes can be inferred from frame sizes.
 See [format and security boundaries](FORMAT.md).
+
+## Shared sender-signature preview
+
+Version 0.1.0-alpha.2-preview.1 adds the **Signaturen** tab for protected
+signing keys and `.kcsig` sender checks. See [SIGNATURES.md](SIGNATURES.md)
+for the UI/CLI flow and exact wire bytes. Rescue 0.1.0-preview.3 uses the
+same check. Existing OpenSSH signatures remain separate and compatible.
+Read [malware protection limits](MALWARE-PROTECTION.md): requested scan
+failures block output; no detection is not a safety guarantee.

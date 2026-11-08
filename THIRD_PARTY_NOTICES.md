@@ -1,14 +1,13 @@
 # Third-party notices
 
-The Windows x64 preview includes KryptoCore, a shared Rust worker and the
-self-contained .NET 10.0.9 Windows runtime. MSG additionally bundles Tor
-Expert Bundle 16.0. Container does not bundle Tor.
+This Windows x64 preview includes a Rust worker, the MIT-licensed KryptoCore
+library and the self-contained .NET 10.0.9 Windows runtime. Original license
+and copyright texts accompany the distribution in third-party/. The resolved
+normal/build Rust graph, across targets and workspace feature unification,
+is recorded in RUST-DEPENDENCIES.tsv; not every entry is linked on Windows.
+Preserve the applicable notices when redistributing incorporated components.
+Build-tool and Rust standard-library notices accompany the runtime notices.
+Application source is maintained privately; this documentation repository
+does not grant an open-source license for the application's interface.
 
-The third-party directory contains upstream copyright, license and notice
-texts. RUST-DEPENDENCIES.tsv lists the resolved dependencies reachable from
-the shared worker, including build and test dependencies for traceability.
-The linked Rust standard-library and .NET runtime notices accompany the
-release. The Core library is MIT licensed.
-
-Application source is maintained separately. This repository does not grant
-an open-source license for the application itself.
+Container does not bundle Tor, ClamAV or OpenSSH executables. These optional tools are selected separately.

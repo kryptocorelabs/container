@@ -1,0 +1,2 @@
+a9c08b7cf22b09c64deb62de60bb307e5f350a108ab278455c853d8d911e5527  KryptoCore-Container-0.1.0-alpha.2-preview.1-windows-x64.zip
+e6e855fc0cc375fe803cb7f4751a96e71904633a294239de115d52a08f3946a4  KryptoCore-Container.exe

@@ -1,17 +1,13 @@
-# KryptoCore Container 0.1.0-alpha.1
+# KryptoCore Container 0.1.0-alpha.2-preview.1
 
-First Windows x64 preview published from the desktop application workspace.
+- Add the shared signature companion through a versioned detached KCCS v1 manifest.
+- Create password-encrypted `.kcsk` signing keys, share public `KCP1:` codes and produce `.kcsig` files without external OpenSSH tooling.
+- Verify signatures in the Windows interface, CLI and protected extraction. Existing OpenSSH options remain available and unchanged.
+- Hash the exact stream being decrypted; validate the executable wrapper/footer before scanning or publishing.
+- Enforce selected ClamAV scan budgets during extraction and refuse requested scan failures without fallback.
 
-1. Select **Dateien verschlüsseln**, add copies of files and choose a passphrase.
-2. Save the encrypted archive and share the passphrase separately.
-3. The recipient opens the archive in Container and extracts it to a new folder.
-
-The Windows runtime is included. Optional OpenSSH and ClamAV tools are installed separately.
-
-
-The release ZIP contains upstream notices. SHA256SUMS.txt identifies the
-downloaded bytes. RELEASE_MANIFEST.json records the private source commit,
-application version and artifact hashes.
-
-Use test data and retain independent backups. This build is unsigned and
-has not received an independent security audit.
+Existing KCC ciphertext remains compatible. Never run an executable wrapper
+to establish its own trust: check it with a separate trusted app before
+execution, or extract it as data with Rescue. A valid signer can still send
+malware. No scanner result certifies safety. The Windows app is unsigned and
+has no independent security audit. Use copies and retain backups.
