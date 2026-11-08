@@ -1,5 +1,7 @@
 # KryptoCore Container
 
+[Unreleased design preview](DESIGN.md)
+
 [![Preview](https://img.shields.io/badge/status-alpha-orange)](https://github.com/kryptocorelabs/container/releases)
 
 Portable encrypted archives for files and folders. Powered by the open-source
