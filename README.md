@@ -14,6 +14,13 @@ Portable encrypted archives for files and folders. Powered by the open-source
 
 <img src="assets/logo.png" alt="KryptoCore Container" width="150">
 
+## Source and community
+
+[Browse the implementation](https://github.com/kryptocorelabs/apps-source/tree/main/apps/container) or
+read the [project charter](https://github.com/kryptocorelabs/kryptocore/blob/main/PROJECT_CHARTER.md). First-party code is MIT licensed;
+dependencies retain their own terms. Contributions and independent review are
+welcome. Source visibility does not change the documented preview limits.
+
 ## Get started
 
 Download and extract the Windows x64 ZIP and open KryptoCore-Container.exe.
@@ -33,7 +40,7 @@ independent backups. The executable is unsigned. There is no independent
 security audit or guarantee of recovery after losing a passphrase or identity.
 
 This repository hosts documentation and downloads. Application source is
-maintained separately. KryptoCore is available under MIT. Third-party
+[open under MIT](https://github.com/kryptocorelabs/apps-source/tree/main/apps/container). Third-party
 components retain their own terms. The ZIP includes license texts and notices.
 
 For an independent offline interface to existing KCC files, see the
