@@ -14,6 +14,12 @@ Portable encrypted archives for files and folders. Powered by the open-source
 
 <img src="assets/logo.png" alt="KryptoCore Container" width="150">
 
+Testing to date has been carried out by the KryptoCoreLabs maintainers, locally
+and through automated CI. No independent security audit has been completed.
+We welcome community testing, code reviews and scrutiny of our security
+assumptions. Please use synthetic data and report suspected vulnerabilities
+privately through the project's security-reporting channel.
+
 ## Source and community
 
 [Browse the implementation](https://github.com/kryptocorelabs/apps-source/tree/main/apps/container) or
