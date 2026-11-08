@@ -4,9 +4,9 @@ Container packages files and folders into a portable, read-only encrypted
 archive. It runs offline. The recipient needs the app and the passphrase.
 This is an alpha for testing with copies; keep the originals.
 
-The Windows app source is in the private application workspace. Build it with
+The Windows app source is in the public MIT-licensed application workspace. Build it with
 `./apps/container/build-windows.ps1` from the workspace root. See the
-[private implementation build instructions](https://github.com/kryptocorelabs/apps-source/blob/main/apps/desktop/README.md) for prerequisites.
+[implementation build instructions](https://github.com/kryptocorelabs/apps-source/blob/main/apps/desktop/README.md) for prerequisites.
 
 In Windows Explorer, right-click a `.kcc` file and choose **Open with**.
 Select the portable `KryptoCore-Container.exe` and choose **Always** to
