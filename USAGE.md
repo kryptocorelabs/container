@@ -14,12 +14,14 @@ open future containers with a double-click. Enter the passphrase and press
 Enter to extract into the suggested folder. You can change the destination
 before extracting. You can also drop a `.kcc` file onto the executable.
 
-To send a single file that opens itself, select **Selbstöffnende Windows-EXE**
-before saving. The export includes the portable Windows x64 opener and the
-encrypted KCC payload. The recipient double-clicks the EXE, enters the
-passphrase and chooses where to extract. Share the passphrase separately.
-The generated EXE is unsigned. Open an executable only if you trust its
-source. Windows or a file-sharing service may restrict executable files.
+### Advanced self-extracting EXE
+
+Share a data-only `.kcc` file for ordinary transfers. The self-extracting
+Windows EXE is not recommended for routine sharing because opening it runs
+an executable supplied by the sender. To inspect an existing wrapper, open
+it as data with Container or Rescue. Keep the passphrase separate from the
+file and confirm the sender independently.
+[Container threat model](https://github.com/kryptocorelabs/apps-source/blob/main/apps/container/THREAT_MODEL.md)
 
 After saving, choose **Prüfsumme kopieren** to copy the SHA-256 digest of the
 complete file. Share the digest through a separate, trusted channel. The

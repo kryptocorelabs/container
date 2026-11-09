@@ -40,6 +40,9 @@ No separate Python or .NET installation is required.
 
 The Windows runtime is included. Optional OpenSSH and ClamAV tools are installed separately.
 
+Share a data-only `.kcc` archive for routine transfers. A self-extracting
+Windows EXE is an advanced option and is not recommended for routine sharing.
+See the [canonical threat model](https://github.com/kryptocorelabs/apps-source/blob/main/apps/container/THREAT_MODEL.md).
 
 ## Preview status
 
