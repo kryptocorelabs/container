@@ -40,15 +40,28 @@ No separate Python or .NET installation is required.
 
 The Windows runtime is included. Optional OpenSSH and ClamAV tools are installed separately.
 
-Share a data-only `.kcc` archive for routine transfers. A self-extracting
-Windows EXE is an advanced option and is not recommended for routine sharing.
+Share a data-only `.kcc` archive, or choose the optional self-extracting Windows
+EXE when the recipient needs an included opener. In **Erweiterter Export**,
+select **Selbstöffnende Windows-EXE**. The recipient enters the passphrase and
+extracts into a new folder without installing Container. Extracted documents
+and programs are not launched automatically.
+
+Verify and trust the **entire generated EXE before starting it**, using a
+separate trusted tool or independently received digest. Its bytes differ from
+the published opener, so that opener's digest alone does not verify the new
+EXE. Encrypted-payload authentication is checked during extraction. It does
+not establish executable origin, malware freedom or Windows Authenticode trust.
+The generated EXE is not Authenticode-signed. See the
+[download verification guide](VERIFY-DOWNLOADS.md) for the published app and
+the [sender-signature guide](SIGNATURES.md) for independently trusted file checks.
 See the [canonical threat model](https://github.com/kryptocorelabs/apps-source/blob/main/apps/container/THREAT_MODEL.md).
 
 ## Preview status
 
 Version 0.1.0-alpha.2-preview.1. Use synthetic data and retain original files and
-independent backups. The executable is unsigned. There is no independent
-security audit or guarantee of recovery after losing a passphrase or identity.
+independent backups. The executable is not Authenticode-signed. There is no
+independent security audit or guarantee of recovery after losing a passphrase
+or identity.
 
 This repository hosts documentation and downloads. Application source is
 [open under MIT](https://github.com/kryptocorelabs/apps-source/tree/main/apps/container). Third-party
